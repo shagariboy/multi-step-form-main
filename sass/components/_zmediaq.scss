@@ -1,0 +1,153 @@
+@media (max-width: 46.625em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .sign-up {
+    border-radius: none;
+    background-color: transparent;
+  }
+
+  .step-info {
+    position: absolute;
+    left: 0;
+    border-radius: 0;
+    top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100vw;
+    max-width: none;
+    height: 17.2rem;
+    background-image: url(../assets/images/bg-sidebar-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.6rem;
+    align-items: flex-start;
+
+    &__wrapper {
+      margin-left: 0;
+      margin-top: 3.2rem;
+
+      &:first-child {
+        margin-top: 3.2rem;
+      }
+    }
+
+    &__number {
+      width: 3.3rem;
+      margin-right: 0;
+    }
+
+    &__type {
+      display: none;
+    }
+  }
+
+  .your-info-form {
+    top: 4.5rem;
+    position: fixed;
+    max-width: none;
+    width: 91%;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 3.2rem 2.4rem;
+  }
+
+  .form-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: var(--white);
+    padding: 1.6rem;
+  }
+
+  .plan-options {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 3.2rem;
+    flex-direction: column;
+  }
+
+  .option {
+    max-width: none;
+    width: 100%;
+    border-radius: 0.8rem;
+    border: 1px solid var(--border-color);
+    padding-left: none;
+    padding-bottom: none;
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    grid-template-rows: repeat(3, 2.56rem);
+    height: 7.7rem;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid var(--border-color-active);
+    }
+
+    &-img {
+      width: 4rem;
+      margin-top: none;
+      margin-bottom: none;
+    }
+
+    &-pricing {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    &-free-trial {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
+
+  .option,
+  .heading-tertiary {
+    align-self: flex-end;
+  }
+
+  .next-btn,
+  .confrim-btn {
+    width: 9.7rem;
+    height: 4rem;
+  }
+
+  .add-on {
+    max-height: none;
+    max-width: none;
+
+    &-info {
+      font-size: 1.2rem;
+    }
+  }
+
+  .heading-tertiary {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.609rem;
+  }
+
+  .form-5 {
+    position: fixed;
+    background-color: var(--white);
+    padding: 2.4rem;
+    border-radius: 1rem;
+    z-index: 10;
+    width: 91%;
+    top: 10.1rem;
+  }
+}

@@ -1,0 +1,81 @@
+.form-3 {
+  display: none;
+}
+
+.add-ons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.add-on {
+  border-radius: 0.8rem;
+  border: 1px solid var(--border-color);
+  max-width: 45rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 60fr 1fr;
+  align-items: center;
+  padding: 1.6rem 3rem 2rem 2.4rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--form-2-option-background-color-active);
+    border-color: var(--border-color-active);
+  }
+
+  &-checkbox {
+    margin-right: 2.4rem;
+    width: 2rem;
+    height: 2rem;
+    appearance: none;
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:checked {
+      background-color: var(--border-color-active);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1.8rem;
+      height: 1.8rem;
+      background-image: url(../assets/images/icon-checkmark.svg);
+      background-repeat: no-repeat;
+      background-size: 65%;
+      background-position: center;
+    }
+  }
+
+  &-info {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+  }
+
+  &-price {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--border-color-active);
+  }
+}
+
+.form-3-checkbox-active {
+  border: 1px solid var(--border-color-active);
+  background-color: var(--form-2-option-background-color-active);
+}
+
+.is-checked {
+  background-color: var(--form-2-option-background-color-active);
+  border-color: var(--border-color-active);
+}

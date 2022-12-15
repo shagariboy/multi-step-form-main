@@ -1,0 +1,135 @@
+.sign-up {
+  width: 100%;
+  max-width: 94rem;
+  border-radius: 1.5rem;
+  background-color: var(--white);
+  overflow: auto;
+  display: flex;
+  gap: 10.638%;
+  padding-right: 1.6rem;
+}
+
+.step-info {
+  width: 100%;
+  max-width: 27.4rem;
+  height: 56.8rem;
+  background-image: url(../assets/images/bg-sidebar-desktop.svg);
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+
+  &__wrapper {
+    margin-left: 3.2rem;
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-top: 4rem;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    max-width: 3.3rem;
+    width: 100%;
+    height: 3.3rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: 1.6rem;
+  }
+
+  &__type-number {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 13.79px;
+    color: var(--inactive-font-color);
+    text-transform: uppercase;
+  }
+
+  &__type-selection {
+    font-size: 1.4rem;
+    line-height: 1.609rem;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.progress-active {
+  background-color: var(--progress-background-color-active);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.your-info-form {
+  // display: none;
+  margin-top: 5.6rem;
+  position: relative;
+  max-width: 45rem;
+  width: 100%;
+}
+
+.form-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 45rem;
+  width: 100%;
+  position: absolute;
+  bottom: 3.2rem;
+}
+
+.next-btn,
+.confrim-btn {
+  // display: none;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: var(--primary-color);
+  width: 12.3rem;
+  height: 4.8rem;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.838rem;
+  justify-self: flex-end;
+  grid-column: 2 / 3;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--btn-background-color-active);
+  }
+}
+
+.confrim-btn {
+  display: none;
+  background-color: var(--border-color-active);
+
+  &:hover {
+    background-color: var(--btn-confirm-background-color-active);
+  }
+}
+
+.back-btn {
+  display: none;
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 1.838rem;
+  border: none;
+  background-color: transparent;
+  justify-self: start;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+}
